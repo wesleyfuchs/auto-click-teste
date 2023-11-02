@@ -2,7 +2,7 @@ import tkinter as tk
 import pyautogui
 import time
 
-# List of date sets to be typed
+# Lista das datas que serão utilizadas
 # date_sets = [("01/01/2023", "31/01/2023"), ("01;02;2023", "28;02;2023")]
 # date_sets = [("01;01;2023", "31;01;2023")]
 date_sets = [
@@ -70,7 +70,10 @@ date_sets = [
 ]
     
 
-def move_click_and_type():    
+def move_click_and_type():  
+    """Para cada data em 'date_set' > Por meio de tabs ira chegar no campo de data 'Data Inicial' > digitar a data >
+    tab para ir ao proximo campo 'Data Final' > digitar a data > tab para ir ao botão 'Agendar Exportação' > space para pressionar o botão >
+    ira aguardar 5s para a proxima iteração do loop"""  
 
     # Tempo para o usuario clicar no lugar certo
     time.sleep(10)
@@ -79,20 +82,9 @@ def move_click_and_type():
         time.sleep(3)
 
         # 11 tabs para checkbox 'Data inicial'
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
-        pyautogui.press('tab')
+        for _ in range(11):
+            pyautogui.press('tab')
     
-        # time.sleep(1)
-
         # Escrever a 'Data Inicial'
         pyautogui.typewrite(data[0], interval=0.1)
         # time.sleep(1)
@@ -113,17 +105,19 @@ def move_click_and_type():
         pyautogui.press('space')
         time.sleep(2)
 
-
     status_label.config(text="Ação concluída!")
 
 
+# Configurações da janela do tkinter
 window = tk.Tk()
-window.title("Automatização de Cliques e Digitação")
+window.title("Automatização Sefaz-PI")
+window.geometry("300x100")
 
 start_button = tk.Button(window, text="Começar", command=move_click_and_type)
 status_label = tk.Label(window, text="")
 
-start_button.pack()
+start_button.pack(fill="both", pady=30, padx=50)
+start_button.configure(border=2)
 status_label.pack()
 
 window.mainloop()
