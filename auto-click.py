@@ -2,6 +2,23 @@ import tkinter as tk
 import pyautogui
 import time
 
+"""
+Nome do Programa: [Automatização Sefaz-PI]
+Autor: [Wesley Fuchs]
+Data de Criação: [30/10/2023]
+
+Este programa foi criado para automatizar as solicitações de exportação de documentos no Sefaz PI
+
+Instruções de Uso: Ao clicar começar, você tera 10s para clicar em 'Agendar Exportação',
+assim a tela ficara no local correto para que o codigo funcione sem problemas
+- 
+
+Histórico de Versões:
+- [Versão 1.0 (13/10/2023): Automatiza as solicitações de exportação de documentos de entrada]
+- [Versão 2.0 (Data): ]
+
+"""
+
 # Lista das datas que serão utilizadas
 # date_sets = [("01/01/2023", "31/01/2023"), ("01;02;2023", "28;02;2023")]
 # date_sets = [("01;01;2023", "31;01;2023")]
@@ -71,9 +88,9 @@ date_sets = [
     
 
 def move_click_and_type():  
-    """Para cada data em 'date_set' > Por meio de tabs ira chegar no campo de data 'Data Inicial' > digitar a data >
-    tab para ir ao proximo campo 'Data Final' > digitar a data > tab para ir ao botão 'Agendar Exportação' > space para pressionar o botão >
-    ira aguardar 5s para a proxima iteração do loop"""  
+    """Para cada set de datas em 'date_set' > Por meio de tabs ira chegar no campo de data 'Data Inicial' > digitar a data >
+    tab para ir ao proximo campo 'Data Final' > digitar a data > tab para ir ao botão 'Agendar Exportação' > barra_de_espaço 
+    para pressionar o botão > ira aguardar 5s para a proxima iteração do loop"""  
 
     # Tempo para o usuario clicar no lugar certo
     time.sleep(10)
