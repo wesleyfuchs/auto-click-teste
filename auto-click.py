@@ -125,16 +125,76 @@ def automatizar_NFCe():
     status_label.config(text="Ação concluída!")
 
 
+def automatizar_NFe():
+    """Para cada set de datas em 'date_set' > Por meio de tabs e right_arrow 
+    ira chegar na caixa 'Solicitar Emitente' > 
+    tab e right_arrow para chegar na caixa 'Tipo de nota: Saida' > 
+    tab para o campo 'Data Inicial' > tab para o campo 'Data Final' > 
+    tab para ir ao botão 'Agendar Exportação' > barra_de_espaço 
+    para pressionar o botão > ira aguardar para a proxima iteração do loop"""
+
+    # Tempo para o usuario clicar no lugar certo
+    time.sleep(10)
+
+    for data in date_sets:
+        time.sleep(3)
+
+        # 6 tabs para 'Tipos de Consulta'
+        for _ in range(6):
+            pyautogui.press('tab')
+    
+        time.sleep(1)
+
+        # Selecionar checkbox 'Contribuente como Emitente'
+        pyautogui.press('right')
+
+        time.sleep(2)
+
+        # 3 tabs para 'Tipo de nota:'
+        for _ in range(3):
+            pyautogui.press('tab')
+
+        # Selecionar checkbox 'Saida'
+        for _ in range(2):
+            pyautogui.press('right')
+
+        # 3 tabs para o campo de 'Data Inicial'
+        for _ in range(3):
+            pyautogui.press('tab')
+
+        # Escrever a 'Data Inicial'
+        pyautogui.typewrite(data[0], interval=0.1)
+        
+        # Selecionar o campo 'Data Final'
+        pyautogui.press('tab')
+
+        # Escrever a 'Data Final'
+        pyautogui.typewrite(data[1], interval=0.1)
+        # time.sleep(1)
+
+        # Selecionar o botão 'Agendar Exportacao'
+        pyautogui.press('tab')
+        time.sleep(1)
+
+        # Pressionar o botão
+        pyautogui.press('space')
+        time.sleep(2)
+
+    status_label.config(text="Ação concluída!")
+
 # Configurações da janela do tkinter
 window = tk.Tk()
 window.title("Automatização Sefaz-PI")
-window.geometry("300x100")
+window.geometry("300x150")
 
 nfce_button = tk.Button(window, text="Start NFC-e", command=automatizar_NFCe)
+nfe_button = tk.Button(window, text="Start NF-e", command=automatizar_NFe)
 status_label = tk.Label(window, text="")
 
-nfce_button.pack(fill="both", pady=30, padx=50)
+nfce_button.pack(fill="both", pady=15, padx=40)
 nfce_button.configure(border=2)
+nfe_button.pack(fill="both", pady=15, padx=40)
+nfe_button.configure(border=2)
 status_label.pack()
 
 window.mainloop()
