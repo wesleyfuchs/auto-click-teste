@@ -1,19 +1,25 @@
+# setup.py
+
 import sys
 from cx_Freeze import setup, Executable
 
 build_exe_options = {
     "packages": [],
-    "include_files": ["assets/"],
+    "include_files": ["assets"]
 }
 
 base = None
 if sys.platform == "win32":
-    base = "Win32GUI"  # Use "Win32GUI" se você estiver criando uma GUI
+    base = "Win32GUI"
+
+executables = [
+    Executable("auto-click.py", base=base)
+]
 
 setup(
-    name="auto-sefaz-pi",
+    name="autoSefaz-PI",
     version="2.0",
-    description="Automatização de download de NF-e e NFC-e no site sefaz PI",
+    description="Automação sefaz PI",
     options={"build_exe": build_exe_options},
-    executables=[Executable("auto-click.py", base=base)],
+    executables=executables
 )
