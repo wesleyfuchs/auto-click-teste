@@ -16,6 +16,8 @@ assim a tela ficara no local correto para que o codigo funcione sem problemas
 Histórico de Versões:
 - [Versão 1.0 (31/10/2023): Automatiza as solicitações de exportação de documentos de entrada (NFC-e)]
 - [Versão 2.0 (03/11/2023): Automatiza as solicitações de exportação de documentos de entrada (NF-e)]
+- [Versão 2.5 (28/01/2024): Adiciona arquivo datas.txt para adicionar datas]
+- [Versão 3.0 (31/03/2024): Remove tempo de espera entre ações]
 
 """
 
@@ -33,20 +35,20 @@ def ler_datas_do_arquivo(nome_arquivo):
 def automatizar_NFCe():  
     """Para cada set de datas em 'date_set' > Por meio de tabs ira chegar no campo de data 'Data Inicial' > digitar a data >
     tab para ir ao proximo campo 'Data Final' > digitar a data > tab para ir ao botão 'Agendar Exportação' > barra_de_espaço 
-    para pressionar o botão > ira aguardar 5s para a proxima iteração do loop"""  
+    para pressionar o botão > ira aguardar 3s para a proxima iteração do loop"""  
 
     # Tempo para o usuario clicar no lugar certo
     time.sleep(10)
 
     for data in date_sets:
-        time.sleep(3)
+        # time.sleep(3)
 
         # 11 tabs para checkbox 'Data inicial'
         for _ in range(11):
             pyautogui.press('tab')
     
         # Escrever a 'Data Inicial'
-        pyautogui.typewrite(data[0], interval=0.1)
+        pyautogui.write(data[0])
         # time.sleep(1)
         
         # Selecionar o campo 'Data Final'
@@ -54,16 +56,16 @@ def automatizar_NFCe():
         # time.sleep(1)
 
         # Escrever a 'Data Final'
-        pyautogui.typewrite(data[1], interval=0.1)
+        pyautogui.write(data[1])
         # time.sleep(1)
 
         # Selecionar o botão 'Agendar Exportacao'
         pyautogui.press('tab')
-        time.sleep(1)
+        # time.sleep(1)
 
         # Pressionar o botão'
         pyautogui.press('space')
-        time.sleep(2)
+        time.sleep(3)
 
     status_label.config(text="Ação concluída!")
 
@@ -80,18 +82,16 @@ def automatizar_NFe():
     time.sleep(10)
 
     for data in date_sets:
-        time.sleep(3)
+        # time.sleep(3)
 
         # 6 tabs para 'Tipos de Consulta'
         for _ in range(6):
             pyautogui.press('tab')
-    
-        time.sleep(1)
+        # time.sleep(1)
 
         # Selecionar checkbox 'Contribuente como Emitente'
         pyautogui.press('right')
-
-        time.sleep(2)
+        # time.sleep(2)
 
         # 3 tabs para 'Tipo de nota:'
         for _ in range(3):
@@ -106,22 +106,22 @@ def automatizar_NFe():
             pyautogui.press('tab')
 
         # Escrever a 'Data Inicial'
-        pyautogui.typewrite(data[0], interval=0.1)
+        pyautogui.write(data[0])
         
         # Selecionar o campo 'Data Final'
         pyautogui.press('tab')
 
         # Escrever a 'Data Final'
-        pyautogui.typewrite(data[1], interval=0.1)
+        pyautogui.write(data[1])
         # time.sleep(1)
 
         # Selecionar o botão 'Agendar Exportacao'
         pyautogui.press('tab')
-        time.sleep(1)
+        # time.sleep(1)
 
         # Pressionar o botão
         pyautogui.press('space')
-        time.sleep(2)
+        time.sleep(3)
 
     status_label.config(text="Ação concluída!")
 

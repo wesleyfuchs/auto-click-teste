@@ -18,7 +18,7 @@ executables = [
 
 setup(
     name="autoSefaz-PI",
-    version="2.0",
+    version="3.0",
     description="Automação sefaz PI",
     options={"build_exe": build_exe_options},
     executables=executables
