@@ -1,0 +1,13 @@
+/*
+ * jQuery Animated Auto-Resizable Textarea Plugin v1.0
+ *
+ * Copyright (c) 2009 - 2010 Wayne Haffenden
+ * http://www.waynehaffenden.com/Blog/jQuery-AutoResizable-Plugin
+ *
+ * $Id: jquery.autoResizable.js, v 1.0 2009-12-30 01:53:14Z whaffenden $
+ *
+ * Dual licensed under the MIT and GPL licenses:
+ *   http://www.opensource.org/licenses/mit-license.php
+ *   http://www.gnu.org/licenses/gpl.html
+ */
+(function(a){a.fn.autoResizable=function(b){var c=a.extend({animate:true,animateDuration:200,maxHeight:500,onBeforeResize:null,onAfterResize:null,padding:20,paste:true,pasteInterval:100},b);return this.filter("textarea").each(function(){var p=a(this),k=p.height(),g=0,n=null,e=c.animate,q=c.animateDuration,r=c.maxHeight,h=c.onBeforeResize,m=c.onAfterResize,o=c.padding,f=c.paste,j=c.pasteInterval;var l=(function(){var t=["height","letterSpacing","lineHeight","textDecoration","width"],u={};a.each(t,function(w,v){u[v]=p.css(v)});return p.clone().removeAttr("id").removeAttr("name").css({left:-99999,position:"absolute",top:-99999}).css(u).attr("tabIndex",-1).insertBefore(p)})();var d=function(){if(k<=0){k=p.height()}l.height(0).val(p.val()).scrollTop(10000);var t=Math.max((l.scrollTop()+o),k);if(t===g||(t>=r&&g===r)){return}if(t>=r){t=r;p.css("overflow-y","auto")}else{p.css({overflow:"hidden",overflowY:"hidden"})}var u=true;if(h!==null){u=h.call(p,g,t)}g=t;if(u===false){return}if(e&&p.css("display")==="block"){p.stop().animate({height:t},q,function(){if(m!==null){m.call(p)}})}else{p.height(t);if(m!==null){m.call(p)}}};var s=function(){if(f){n=setInterval(d,j)}d()};var i=function(){if(n!==null){clearInterval(n);n=null}};p.css({overflow:"hidden",resize:"none"});p.unbind(".autoResizable").bind("keydown.autoResizable",d).bind("keyup.autoResizable",d).bind("change.autoResizable",d).bind("focus.autoResizable",s).bind("blur.autoResizable",i)})}})(jQuery);PrimeFaces.widget.InputText=function(a){this.id=a.id;this.cfg=a;this.jqId=PrimeFaces.escapeClientId(this.id);this.jq=jQuery(this.jqId);if(this.cfg.behaviors){PrimeFaces.attachBehaviors(this.jq,this.cfg.behaviors)}PrimeFaces.skinInput(this.jq)};PrimeFaces.widget.InputTextarea=function(b,a){this.id=b;this.cfg=a;this.jqId=PrimeFaces.escapeClientId(this.id);this.jq=jQuery(this.jqId);if(this.cfg.behaviors){PrimeFaces.attachBehaviors(this.jq,this.cfg.behaviors)}PrimeFaces.skinInput(this.jq);if(this.cfg.autoResize){this.jq.autoResizable({maxHeight:this.cfg.maxHeight,animateDuration:this.cfg.effectDuration})}};

@@ -1,0 +1,97 @@
+.button {
+    text-align:center;
+    font-weight: bold;
+    position: relative;
+    z-index: 1 !important;
+}
+
+.button a {
+    background-color: #FFF;
+    font-size: 12pt;
+    height: 50px; 
+    line-height: 50px; 
+    color: #444;
+    text-decoration: none;
+    border: 1px solid #999;
+}
+
+.button a:hover {
+    border: 1px solid #444;
+}
+
+.button a img {
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    border:none;
+}
+
+.button a span {
+    color: #FFF;
+    background-color: #1B2D10;
+    border-left: 1px solid #999;
+    border-right: 1px solid #999;
+    font-size: 8pt;
+}
+
+.button a span.hint {
+    line-height: 15px;
+    text-align:left;
+    padding: 5px;
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    z-index: 10000;
+    display: none;
+}
+
+.panel {
+    border: 1px solid #999;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.dialog > ul {
+    list-style: none;
+}
+
+.dialog > ul > li {
+    margin-bottom: 5px;
+}
+
+.dialog > ul > li > a {
+    font-weight: bold;
+}
+
+a.dief-button {
+    text-indent: -9000px;
+    display:block;
+    width: 200px;
+    height: 70px;
+    background-image: url(../icons/dief-button.png);
+    background-repeat: no-repeat;
+}
+
+a.dief-button:hover {
+    background-image: url(../icons/dief-button-hover.png);
+    background-repeat: no-repeat;
+}
+
+.exclusao {
+    color: red;
+}
+
+.confirmacao {
+    color: blue;
+}
+
+.calendario .ui-datepicker-trigger {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.grid-form > tbody > tr > td > label{
+    margin: 0 5px 0 0; 
+    float: right; 
+    text-align: right;
+}

@@ -1,0 +1,1 @@
+PrimeFaces.widget.AjaxStatus=function(a){this.id=a;this.jqId=PrimeFaces.escapeClientId(this.id)};PrimeFaces.widget.AjaxStatus.prototype.bindFacet=function(c,b){var a=this;jQuery(document).bind(c,function(){jQuery(a.jqId).children().hide();jQuery(a.jqId+"_"+b).show()})};PrimeFaces.widget.AjaxStatus.prototype.bindCallback=function(a,b){jQuery(document).bind(a,b)};

@@ -1,0 +1,693 @@
+/*
+    Document   : siatnet
+    Created on : 28/09/2010, 11:30:09
+    Author     : benigno
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+<!--
+/**/
+/* DEMAIS FONTES E CORES */
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    background-color: #CCCCCC;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+}
+.branco10 {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #ffffff;
+}
+.vermelho {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #cd0a0a;
+    text-align: right;
+}
+.menuitem {
+    border: 1px solid #aaaaaa; background: #99CC66;
+    width: 230px;
+}
+.azul {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    color: #0078ae;
+    text-align: right;
+}
+
+.campo {
+    TEXT-DECORATION: none;
+    font-family: Verdana;
+    font-size:10px;
+    color: #000000;
+    font-weight: bold;
+    text-align: right;
+}
+.campoDireita{
+    TEXT-DECORATION: none;
+    font-family: Verdana;
+    font-size:10px;
+    color: #000000;
+    font-weight: bold;
+    text-align: right;
+    float: right;
+}
+.centralizaTabela {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.centralizaTabela850 {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.centralizaTabelaContaCorrentePortal {
+    width: 865px;
+    /*    margin: 0 auto;*/
+}
+.panelTextoJustificado {
+    width: 900px; 
+    margin: 0 auto; 
+    text-align: justify;
+}
+.panelTextoJustificado850px {
+    width: 850px; 
+    margin: 0 auto; 
+    text-align: justify;
+}
+.panelTextoJustificado830px {
+    width: 830px; 
+    margin: 0 auto; 
+    text-align: justify;
+}
+
+/* INPUTTEXT */
+
+.razaoSocial {
+    width: 350px;
+}
+.inscricaoEstadual {
+    width: 70px;
+}
+.cpfCnpj {
+    width: 140px;
+}
+.uf {
+    width: 40px;
+}
+.municipio {
+    width: 140px;
+    height: 13px;
+}
+.listaMunicipio {
+    width: 140px;
+    height: 19px;
+}
+.municipioSelectOneListBox {
+    width: 170px;
+    height: 19px;
+}
+.modeloNota {
+    width: 340px;
+    height: 19px;
+}
+.valoresNota {
+    width: 140px;
+    text-align: center;
+}
+.valoresItemNota {
+    width: 80px;
+    text-align: center;
+}
+.valoresNotaPriceTable{
+    width: 100%;
+    border-style: none;
+    text-align: center;
+    box-shadow: 0px 0px !important;
+    border: 0px !important;    
+
+}
+
+.textAlignRight{
+    text-align: right;
+}
+.quantidade {
+    width: 50px;
+    text-align: center;
+}
+.titleColumCenter {
+    width: 100%; 
+    text-align: center; 
+    display: block;
+}
+.texto10px {
+    font-size: 10px; 
+}
+.codItemm {
+    display: block;
+    width: 60px;
+    text-align: center;
+}
+.descricaoItem {
+    width: 240px;
+}
+.und {
+    width: 130px;
+    height: 19px;
+}
+.periodo {
+    width: 50px;
+}
+.campoValores, .campoValoresADireita{
+    text-align: right;
+
+}
+.campoValoresADireita{
+    float: right;
+}
+.campoTexto {
+    text-align: left;
+}
+.campoTextoTitulo{
+    font-style: inherit; 
+    display: block; 
+    text-align: right; 
+    width: 180px; 
+    font-weight: bold;
+}
+
+.largura100{
+    width: 100%;
+}
+
+.consultaPorInscricaoPeriodo {    
+    width: 550px;    
+    margin: 0 auto;
+}
+.situacaoAtual {
+    width: 550px;
+    margin: 0 auto;
+}
+.saldoNoPeriodo {
+    width: 750px;
+    margin: 0 auto;
+}
+.movimentacoes {
+    width: 750px;
+    margin: 0 auto;
+}
+
+.demonstrativos {
+    width: 900px;
+    margin: 0 auto;
+}
+.identificacoes {
+    width: 845px;
+    margin: 0 auto;
+}
+
+.valoresInformadosD {
+    width: 725px;
+    margin: 0 auto;
+}
+
+.listagemPagamentosRealizados {
+    width: 900px;
+    margin: 0 auto;
+}
+
+.parcelamentos {
+    width: 647px;
+    margin: 0 auto;
+}
+
+.parcelamentoDocumentos {
+    width: 675px;
+    margin: 0 auto;
+}
+
+.parcelamentoParcelas {
+    width: 770px;
+    margin: 0 auto;
+}
+
+.parcelamentoTotais {
+    width: 465px;
+    margin: 0 auto;
+}
+
+.valoresInformadosAD {
+    width: 720px;
+    margin: 0 auto;
+}
+.valoresInformadosA {
+    width: 850px;
+    margin: 0 auto;
+}
+
+.valoresInformados {
+    width: 550px;
+    margin: 0 auto;
+}
+
+.consultaPorInscricaoPeriodoRenavan {    
+    width: 700px;
+    position: relative;
+    margin: 0 auto;
+}
+.consultaSaldos {    
+    width: 550px;    
+    margin: 0 auto;
+}
+.dividasPendentes {
+    width: 755px;
+    margin: 0 auto;
+}
+
+.solicitarCadastroAviso{
+    width: 720px;
+    margin: 0 auto;
+    text-align: justify;
+}
+
+.panelConsulta{
+    width: 460px;
+    margin: 0 auto;
+}
+
+.campoPequeno{
+    font-size: 8px;
+}
+
+.floatLeft{
+    float: left;
+    text-align: left;
+}
+.floatRight{
+    float: right;
+    text-align: right;
+}
+/* DIVS */
+
+#top {
+    height: 100px;
+    background-image: url(../imagens/backgroundNovo.png);
+}
+#menu {
+    vertical-align: middle;
+    height: 25px;
+}
+#bottom {
+    height: 35px;
+    background-image: url(../imagens/templateFundoBottom.png);
+    line-height: 50px;
+}
+#content {
+    min-height: 200px;
+    background-color: #ffffff;
+}
+#principal {
+    width: 1024px;
+    background-color: #ffffff;
+    border-width: 1px;
+    border-style: solid;
+    margin: 0 auto;
+}
+
+input[type = text][readonly]{
+    background-color: #E8E8E8 !important;
+}
+
+calendar[type = text] [readonly] {
+    background-color: #E8E8E8 !important;
+}
+
+.column-tamanho-fixo {
+    width: 120px;
+}
+.panel-generico{
+    margin: 0 auto;
+    width: 800px;
+}
+.panel600{
+    margin: 0 auto;
+    width: 600px;
+}
+.tamanhoFixo15p{
+    width: 15%;
+}
+.tamanhoFixo35p{
+    width: 35%;
+}
+.tabela-detalhes{
+    border-collapse: collapse;
+    width: 100%;
+}
+.tabela-detalhes th{
+    font-weight: normal;
+    background-color: #1F4C1F;
+    border: 1px solid #828282;
+    color: #ffffff;
+    padding: 5px;
+}
+.tabela-detalhes td{
+    padding: 5px;
+    border: 1px solid #828282;
+}
+.div-usuario{
+    height: 20px; 
+    width: 100%; 
+    margin: 0 auto;
+}
+
+.icone-sair{
+    margin-left: 10px;
+    margin-right: 3px;
+    text-decoration: none;
+    font-size: 11px;
+    height: 16px;
+    display: block;
+    padding: 1px;
+    text-align: right;
+}
+.icone-sair img{
+    border: 0 none;
+}
+.sem-borda, .sem-borda td, .sem-borda img{
+    border: 0 none !important;
+}
+
+.wijmo-wijmenu > div > ul > li > a > .wijmo-wijmenu-text > .wijmo-wijmenu-text {
+    color: #FFF !important;
+}
+
+.wijmo-wijmenu-child .wijmo-wijmenu-link .ui-icon-triangle-1-e{
+    background-image: url(./custom-theme/images/ui-icons_222222_256x240.png) !important;
+    float: right;
+}
+
+.wijmo-wijmenu-list, .wijmo-wijmenu-list li .wijmo-wijmenu-text{
+    color: #555555;
+}
+.wijmo-wijmenu{
+    padding: 0;
+    border-radius: 0;
+    background:  url(./custom-theme/images/ui-bg_glass_20_1f4c1f_1x400.png) repeat-x scroll 50% 50% #1F4C1F;
+}
+.wijmo-wijmenu > .scrollcontainer > ul > .wijmo-wijmenu-parent .wijmo-wijmenu-text{
+}
+/*.wijmo-wijmenu-item  .wijmo-wijmenu-link {
+    color: #555555;
+} */
+.wijmo-wijmenu-item > .ui-state-hover > .wijmo-wijmenu-text > .wijmo-wijmenu-text, .wijmo-wijmenu-item >  .ui-state-active > .wijmo-wijmenu-text > .wijmo-wijmenu-text{
+    color: #FFFFFF !important;
+}
+
+.wijmo-wijmenu > .scrollcontainer > ul > li > ul{
+    width: 180px !important;
+}
+
+.wijmo-wijmenu > .scrollcontainer > ul > li > ul > li > ul, .wijmo-wijmenu > .scrollcontainer > ul > li > ul > li > ul > li > ul{
+    width: 280px !important;
+}
+
+.wijmo-wijmenu > .scrollcontainer > ul > li > ul{
+    top: 27px !important;
+}
+.ui-datepicker{
+    display: none;
+}
+.ui-datepicker-trigger{
+    padding: 0;
+}
+
+
+
+
+#panelDetalhe_header {
+    text-align: center !important;
+}
+
+#panelDetalhe_content {
+    padding: 0.2em 0 !important;
+}
+
+#gridResultado_paginatorbottom {
+    text-align: left;
+}
+
+#alteracoes td {
+    text-align: left;
+}
+
+#periodoPagamento .ui-datepicker-trigger {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+
+#panelDetalhe_header {
+    text-align: center !important;
+}
+
+#panelDetalhe_content {
+    padding: 0.2em 0 !important;
+}
+
+#gridResultado_paginatorbottom {
+    text-align: left;
+}
+
+#alteracoes td {
+    text-align: left;
+}
+
+#periodoPagamento .ui-datepicker-trigger {
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+#gridResultado .ui-sortable-column-icon {
+    display: none;
+}
+.datatable-domicilio th, .datatable-domicilio tfoot td {
+    white-space: normal;
+}
+
+/* Criado por JJ para Gestão TI - 03/10/2012 */
+.semusuarios {     
+    background-color: #fedbcd !important;              
+    background-image: none !important;
+    color: #000000 !important;
+}
+.step-by-step{
+    width: 100%;
+    margin: 0 auto;
+    float: left;
+    padding: 1px;
+    clear: both;
+}
+.step-by-step ul{
+    /*  width: 800px;*/
+    margin-left: 0px;
+    float: left;
+    padding: 0;
+}
+.step-by-step li{
+    width: 128px;
+    float: left;
+    position: relative;
+    list-style: none;
+    font-size: 11px;
+    padding: 5px;
+    text-align: center;
+    color: #CCCCCC;
+    margin-left: 0;
+    border: 1px solid #CCCCCC;
+    margin-right: 5px;
+}
+.step-by-step li a{
+    color: #CCCCCC;
+
+}
+.step-by-step li.current{
+    border: 1px solid #000000;
+    color: black;
+    margin-right: 5px;
+}
+.step-by-step li.current a{
+    color: black;
+
+}
+.step-by-step li span{
+    clear: both;
+    font-size: 14px;
+    font-weight: bold;
+}
+.step-by-step .ui-icon{
+    display: none;
+    text-align: center;
+    margin: 0 auto;
+}
+.step-by-step .current .ui-icon{
+    display: block;
+}
+
+.fieldset-centraliza{
+    width: 880px;
+    margin: 0 auto;
+}
+.ui-datatable thead th{
+    text-align: center !important;
+}
+.w-50-per{
+    width: 50%;
+}
+
+
+/*div#listaNfeDetalhada_consultaExportaNfeDetalhada .ui-paginator-top, div#listaNfeDetalhada_consultaExportaNfeDetalhada .ui-paginator-bottom {
+    position: absolute !important;
+    top: 386px;
+    width: 818px;
+    font-family: fantasy;
+}
+*/
+/* CSS ddas páginas do PORTAL IPVA */
+.portalPanel {
+    margin: 0 auto;
+    width: 870px;
+    margin-top: 10px;
+    font-size: 9px;
+}
+
+.portalPanelInterno {
+    margin: 5px;
+    width: 250px;    
+
+    padding: 0 !important;
+    border: 1px solid #999 !important;
+}
+
+.portalCentro {
+    margin: 0 auto;
+}
+
+.portalPanelGrid {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 !important;
+}
+
+.portalPanelGrid:hover {
+    background-color: #f0f6f0;
+}
+
+.portalPanelInterno >  .ui-panel-content{
+    padding: 0 !important;
+}
+
+.portalPanelLink {
+    text-decoration: none; 
+    display: block;
+    padding: 0.5em 1em;
+}
+
+.portalPanelInterno:hover {
+    border: 1px solid #000 !important;
+}
+
+.portalImagem {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.portalTexto {
+    font-weight: bold;
+    font-size: 12px;
+    margin: 0 auto;
+    margin-left: 5px;
+    font-family: Arial;
+}
+
+.labelAlignRigth {
+    display: block;
+    text-align: right;
+    font-weight: bold;
+}
+.labelAlignLeft {
+    display: block;
+    text-align: left;
+    font-weight: bold;
+}
+.w-90percent{width: 90%;}
+.w-100percent{width: 100%;}
+
+
+/*INTERPI*/
+.labelAparenciaTableHeader{
+    background: #1f4c1f url(images/ui-bg_highlight-soft_50_1f4c1f_1x100.png) 50% 50% repeat-x;
+    color: white;
+    font-weight: bold;
+    height: 21px;
+    padding: 0px 10px 0px 10px;
+}
+
+.outPutTextTable{
+    border: black;
+    border-style: inset;
+    border-width: 1px;
+    padding: 0px 4px 0px 4px;
+}
+
+
+
+.w-50{width: 50px;}
+.w-75{width: 75px;}
+.w-100{width: 100px;}
+.w-110{width: 110px;}
+.w-119{width: 115px;}
+.w-120{width: 120px;}
+.w-130{width: 130px;}
+.w-140{width: 140px;}
+.w-150{width: 150px;}
+.w-160{width: 160px;}
+.w-170{width: 170px;}
+.w-180{width: 180px;}
+.w-190{width: 190px;}
+.w-200{width: 200px;}
+.w-210{width: 210px;}
+.w-220{width: 220px;}
+.w-230{width: 230px;}
+.w-240{width: 240px;}
+.w-250{width: 250px;}
+.w-260{width: 260px;}
+.w-270{width: 270px;}
+.w-280{width: 280px;}
+.w-290{width: 290px;}
+.w-300{width: 300px;}
+.w-310{width: 310px;}
+.w-320{width: 320px;}
+.w-330{width: 330px;}
+.w-340{width: 340px;}
+.w-350{width: 350px;}
+.w-400{width: 400px;}
+.w-450{width: 450px;}
+.w-500{width: 500px;}
+.w-550{width: 550px;}
+.bold{font-weight: bold;}
+.ui-datatable th{white-space: normal;}
+.titulo-funcionalidade{background: #1f4c1f; margin: 10px 5px; color: #fff; font-size: 13px; padding: 5px;}
+textarea {width: 500px !important;height: 120px !important}

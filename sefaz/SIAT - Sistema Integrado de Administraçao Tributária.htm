@@ -1,0 +1,581 @@
+<!--?xml version='1.0' encoding='UTF-8' ?-->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/theme.css">
+<script type="text/javascript" async="" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/js"></script><script async="" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/analytics.js"></script><script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/jquery.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/core.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/ajaxstatus.js"></script>
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/forms.css">
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/inputmask.js"></script>
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/jquery-ui.css">
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/jquery-ui.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dialog.js"></script>
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/wijmo.css">
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/wijmo.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/menu.js"></script>
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/panel.css">
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/panel.js"></script>
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/messages.css">
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/fieldset.css">
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/fieldset.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/jsf.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/calendar.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/calendar_i18n.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/button.js"></script>
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/paginator.css">
+<link type="text/css" rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/datatable.css">
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/utilities.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/paginator.js"></script>
+<script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/datatable.js"></script>
+            <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+            <link rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/screen.css" type="text/css" media="screen, projection">
+            <link rel="stylesheet" href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/print.css" type="text/css" media="print"><!--[if lt IE 8]><link rel="stylesheet" href="/siatweb/css/blueprint/ie.css" type="text/css" media="screen, projection"><![endif]-->
+            <link href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/jquery-ui-1.8.6.custom.css" rel="stylesheet" type="text/css">
+            <link href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/siatnet.css" rel="stylesheet" type="text/css">
+            <link href="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/styles.css" rel="stylesheet" type="text/css">
+            <script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/siatnet.js"></script>
+            <script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/jquery.price_format.1.3.js"></script>
+            <script type="text/javascript" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/jquery.limit-1.2.source.js"></script>
+            <title>SIAT - Sistema Integrado de Administraçao Tributária</title><meta http-equiv="origin-trial" content="AymqwRC7u88Y4JPvfIF2F37QKylC04248hLCdJAsh8xgOfe/dVJPV3XS3wLFca1ZMVOtnBfVjaCMTVudWM//5g4AAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjk1MTY3OTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"></head><body class="yui-skin-sam"><div id="j_idt8"></div><script type="text/javascript">widget_j_idt8 = new PrimeFaces.widget.AjaxStatus('j_idt8');widget_j_idt8.bindCallback('ajaxStart',function(){varDialogLoading.show();});widget_j_idt8.bindCallback('ajaxComplete',function(){varDialogLoading.hide();});</script>
+
+                <!-- for&ccedil;ar o primefaces importar scripts de mascara --><input id="j_idt10" name="j_idt10" type="text" style="display: none" class="ui-inputfield ui-widget ui-state-default ui-corner-all"><script type="text/javascript">widget_j_idt10 = new PrimeFaces.widget.InputMask('j_idt10', {mask:'99'});</script><script type="text/javascript">jQuery(function() {varDialogLoading = new PrimeFaces.widget.Dialog('dialogLoading',{autoOpen:false,minHeight:0,width:250,modal: true,resizable:false,closable:false,appendToBody:true});});</script>
+            <div id="principal">
+                <div id="top"><img src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/indexLogo.png">
+                </div>
+<form id="formMenuSiatWebId" name="formMenuSiatWebId" method="post" action="/siatweb/faces/views/nfce/ExportarNFCE.xhtml" enctype="application/x-www-form-urlencoded" style="float: left; width: 100%;">
+<input type="hidden" name="formMenuSiatWebId" value="formMenuSiatWebId">
+<div id="formMenuSiatWebId:menuSiatWebId"><div class="ui-widget ui-widget-content wijmo-wijmenu ui-corner-all ui-helper-clearfix wijmo-wijmenu-horizontal" aria-activedescendant="ui-active-menuitem" role="menubar"><div class="scrollcontainer checkablesupport"><ul id="formMenuSiatWebId:menuSiatWebId_menu" style="display: block;" class="wijmo-wijmenu-list ui-helper-reset" tabindex="0"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Autoatendimento</span></span><span class="ui-icon ui-icon-triangle-1-s"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Cadastro</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_CADU062','formMenuSiatWebId:RL_CADU062').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Dados Cadastrais</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">NFC-e</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_NFCU002','formMenuSiatWebId:RL_NFCU002').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar/Exportar NFC-e</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_NFCU001','formMenuSiatWebId:RL_NFCU001').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Manutenção de CSC</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Nota Avulsa</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Relatórios</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_DCLU075','formMenuSiatWebId:RL_DCLU075').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consulta de Notas Registradas no SITRAN</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_REC001','formMenuSiatWebId:RL_REC001').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Relatório da Cobrança</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">AIDF</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_AIDU061','formMenuSiatWebId:RL_AIDU061').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar AIDF</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_AIDU071','formMenuSiatWebId:RL_AIDU071').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Incorporação de AIDF</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_AIDU072','formMenuSiatWebId:RL_AIDU072').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consulta de Notas Fiscais Não Utilizadas</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">DIEF</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_DCLU073','formMenuSiatWebId:RL_DCLU073').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consulta Notas Fiscais - DIEF</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_DCLU072','formMenuSiatWebId:RL_DCLU072').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consulta Processamento da DIEF</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_DCLU75','formMenuSiatWebId:RL_DCLU75').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Baixa de Arquivos DIEF</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_DCLU077','formMenuSiatWebId:RL_DCLU077').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Solicitação de Dispensa DIEF</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Malhas Fiscais</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:MAL_003','formMenuSiatWebId:MAL_003').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consulta de Malhas</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:MAL_004','formMenuSiatWebId:MAL_004').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consulta Pendencias DIEF</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">EFD e OIE</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_EFD001','formMenuSiatWebId:RL_EFD001').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar/Exportar Arquivos EFD e OIE</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_EFD004','formMenuSiatWebId:RL_EFD004').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Omissão</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_EFD003','formMenuSiatWebId:RL_EFD003').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Pendências</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">SEIPS</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SEIPS10','formMenuSiatWebId:RL_SEIPS10').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Solicitar Transferência de Recursos</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SEIPS03','formMenuSiatWebId:RL_SEIPS03').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Validar Certificado</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SEIPS11','formMenuSiatWebId:RL_SEIPS11').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Solicitar Utilização de Crédito</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SEIPS12','formMenuSiatWebId:RL_SEIPS12').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Utilização de Crédito</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">CT-e</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_CTE001','formMenuSiatWebId:RL_CTE001').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar/Exportar CT-e</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Visão Integral Tributária</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_ARRU020','formMenuSiatWebId:RL_ARRU020').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Pagamentos Realizados</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_CTCU057','formMenuSiatWebId:RL_CTCU057').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Visão Integral Tributária</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_CTCU023','formMenuSiatWebId:RL_CTCU023').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Extrato de Parcelamento</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">IPVA</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_IPVU020','formMenuSiatWebId:RL_IPVU020').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Visão Integral</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">NF-e</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_NFEU002','formMenuSiatWebId:RL_NFEU002').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar/Exportar NF-e Detalhada</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_NFEU001','formMenuSiatWebId:RL_NFEU001').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar/Exportar NF-e</span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Anistia</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_ANIU005','formMenuSiatWebId:RL_ANIU005').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Anistia - SEFAZ</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_ANIU006','formMenuSiatWebId:RL_ANIU006').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Anistia - PGE</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_ANIU010','formMenuSiatWebId:RL_ANIU010').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Simulação Anistia </span></span></a></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Incentivo a Cultura</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SICU011','formMenuSiatWebId:RL_SICU011').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Consultar Utilização de Crédito</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SICU009','formMenuSiatWebId:RL_SICU009').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Solicitação Transferência de Recursos</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SICU010','formMenuSiatWebId:RL_SICU010').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Solicitação para Utilização de Crédito</span></span></a></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_SICU012','formMenuSiatWebId:RL_SICU012').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Validar Certificado</span></span></a></li></ul></li></ul></li><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all ui-state-focus" id="ui-active-menuitem"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Trânsito</span></span><span class="ui-icon ui-icon-triangle-1-s"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all wijmo-wijmenu-parent" aria-haspopup="true"><a href="javascript:void(0)" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">DECID</span></span><span class="ui-icon ui-icon-triangle-1-e"></span></a><ul class="wijmo-wijmenu-list ui-widget-content ui-corner-all ui-helper-clearfix wijmo-wijmenu-child ui-helper-reset" style="display: none;" role="menu" aria-activedescendant="ui-active-menuitem" aria-hidden="true"><li role="menuitem" class="ui-widget wijmo-wijmenu-item ui-state-default ui-corner-all"><a href="javascript:void(0)" onclick="PrimeFaces.addSubmitParam('formMenuSiatWebId','formMenuSiatWebId:RL_DCDU001','formMenuSiatWebId:RL_DCDU001').submit('formMenuSiatWebId');" class="wijmo-wijmenu-link ui-corner-all"><span class="wijmo-wijmenu-text"><span class="wijmo-wijmenu-text">Declaração e Cobrança</span></span></a></li></ul></li></ul></li></ul></div></div></div><script type="text/javascript">widget_formMenuSiatWebId_menuSiatWebId = new PrimeFaces.widget.Menubar('formMenuSiatWebId:menuSiatWebId',{autoSubmenuDisplay:true,animated:'fade',showDuration:0,hideDuration:0});</script><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-4229316559562595014:7032852389819535793" autocomplete="off">
+</form>
+                    <div id="menu">
+                        <script>
+                            /*<![CDATA[*/
+                            jQuery('.wijmo-wijmenu > .scrollcontainer > ul > li > ul > li').mouseover(function () {
+                                $element = jQuery(this).find(" > ul");
+                                $element.css("top", 0);
+                            });
+                            jQuery('.wijmo-wijmenu > .scrollcontainer  li').click(function () {
+                                $element = jQuery(this).find(" > ul");
+                                $element.css('z-index', 3000);
+                                $element.show();
+                            });
+                            /*]]>*/
+                        </script>
+                    </div>
+                    <div class="div-usuario">
+                        <table style="float: right;" cellpadding="0" cellspacing="0">
+                            <tbody><tr>
+                                <td>
+                                        <strong style="margin-right: 2px;">Usuário:</strong> JOSE NETO GOMES DA SILVA
+                                </td>
+                                
+                                <td style="text-align: right; width: 150px">
+                                    <a href="http://webas.sefaz.pi.gov.br/eageat/jsp/login/bemVindo.jsf" class="ui-button ui-state-hover ui-state-default ui-corner-all ui-button-text-icon-primary" style="background: none; color: #000; border: 0; font-size: 11px">
+                                        <span class="ui-button-icon-primary ui-icon ui-icon-home"></span>
+                                        <span class="ui-button-text">Pagina Inicial</span>
+                                    </a>
+                                </td>
+                                <td>
+<form id="j_idt20" name="j_idt20" method="post" action="/siatweb/faces/views/nfce/ExportarNFCE.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt20" value="j_idt20">
+
+                                        <!-- logout antigo --><a href="#" style="color: #000" title="Sair" onclick="mojarra.jsfcljs(document.getElementById('j_idt20'),{'j_idt20:j_idt22':'j_idt20:j_idt22'},'');return false" class="icone-sair"><img src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/icoSair.png" alt="Sair">
+                                            <span style="float: right; margin-left: 2px;">Sair</span></a><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-4229316559562595014:7032852389819535793" autocomplete="off">
+</form>
+                                    
+                                </td>
+                            </tr>
+                        </tbody></table>
+                    </div>
+                    <div style="clear: both;"></div>
+                <div id="content">
+        <script type="text/javascript">
+            function showDlgComunicado() {
+                comunicadoDlg.show();
+            }
+            window.onload=showDlgComunicado;
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="consultarNFCeForm" name="consultarNFCeForm" method="post" action="/siatweb/faces/views/nfce/ExportarNFCE.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="consultarNFCeForm" value="consultarNFCeForm">
+<div id="j_idt29" class="ui-panel ui-widget ui-widget-content ui-corner-all panel-generico"><div id="j_idt29_header" class="ui-panel-titlebar ui-widget-header ui-corner-all"><span class="ui-panel-title">Consultar NFCE</span></div><div id="j_idt29_content" class="ui-panel-content ui-widget-content"><div id="messages" class="ui-messages ui-widget"><div class="ui-messages-info ui-corner-all"><span class="ui-messages-info-icon"></span><ul><li><span class="ui-messages-info-summary">Agendamento registrado com sucesso, seu download estará disponível em até 1 dia útil.</span></li></ul></div></div><fieldset id="tipoConsulta" class="ui-fieldset ui-widget ui-widget-content ui-corner-all"><legend class="ui-fieldset-legend ui-corner-all ui-state-default">Tipos de Consulta</legend><div class="ui-fieldset-content">
+                            <table id="buscaComoId">
+	<tbody><tr>
+<td>
+<input type="radio" checked="checked" name="buscaComoId" id="buscaComoId:0" value="1" title="Selecione uma opção" onchange="mojarra.ab(this,event,'change','tipoConsulta','@form dadosNota altExterno altInterno')"><label for="buscaComoId:0"> Contribuinte como Emitente</label></td>
+<td>
+<input type="radio" name="buscaComoId" id="buscaComoId:1" value="2" title="Selecione uma opção" onchange="mojarra.ab(this,event,'change','tipoConsulta','@form dadosNota altExterno altInterno')"><label for="buscaComoId:1"> Contribuinte como Destinatário</label></td>
+	</tr>
+</tbody></table></div></fieldset><img id="j_idt34" height="10" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dot_clear.gif"><fieldset id="j_idt35" class="ui-fieldset ui-widget ui-widget-content ui-corner-all"><legend class="ui-fieldset-legend ui-corner-all ui-state-default">Dados da Consulta</legend><div class="ui-fieldset-content"><span id="altExterno"><table>
+<tbody>
+<tr>
+<td class="w-150"><span class="campo" style="text-align: right; display: block">Inscrição::</span></td>
+<td><select id="j_idt39" name="j_idt39" size="1" onchange="PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:this,process:'j_idt39',update:'consultarNFCeForm',event:'valueChange'});">	<option value="194342999">194342999</option>
+	<option value="194763501" selected="selected">194763501</option>
+</select></td>
+</tr>
+</tbody>
+</table>
+</span><span id="altInterno"></span><span id="dadosNota">
+<span id="panel-dados"><table id="formularioPanel">
+<tbody>
+<tr>
+<td class="w-150"><span class="campo" style="text-align: right; display: block">Tipo de nota:</span></td>
+<td><table>
+<tbody>
+<tr>
+<td><table id="tipoDeNota">
+	<tbody><tr>
+<td>
+<input type="radio" name="tipoDeNota" id="tipoDeNota:0" value="0"><label for="tipoDeNota:0"> Entrada</label></td>
+<td>
+<input type="radio" checked="checked" name="tipoDeNota" id="tipoDeNota:1" value="1"><label for="tipoDeNota:1"> Saída</label></td>
+	</tr>
+</tbody></table></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="w-150"><span class="campo" style="text-align: right; display: block">Status da NFC-e:</span></td>
+<td><table>
+<tbody>
+<tr>
+<td><table id="statusNota">
+	<tbody><tr>
+<td>
+<input type="radio" checked="checked" name="statusNota" id="statusNota:0" value="2"><label for="statusNota:0"> Todas</label></td>
+<td>
+<input type="radio" name="statusNota" id="statusNota:1" value="1"><label for="statusNota:1"> Válidas</label></td>
+<td>
+<input type="radio" name="statusNota" id="statusNota:2" value="0"><label for="statusNota:2"> Canceladas</label></td>
+	</tr>
+</tbody></table></td>
+</tr>
+</tbody>
+</table>
+</td>
+</tr>
+<tr>
+<td class="w-150"><span class="campo" style="text-align: right; display: block">Série</span></td>
+<td><input id="numeroNota" name="numeroNota" type="text" size="20" class="ui-inputfield ui-widget ui-state-default ui-corner-all"></td>
+</tr>
+<tr>
+<td class="w-150"><span class="campo" style="text-align: right; display: block">Data de Emissão Inicial</span></td>
+<td><span id="dataInicial"><input id="dataInicial_input" name="dataInicial_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all hasDatepicker" size="20"></span></td>
+</tr>
+<tr>
+<td class="w-150"><span class="campo" style="text-align: right; display: block">Data de Emissão Final</span></td>
+<td><span id="dataFinal"><input id="dataFinal_input" name="dataFinal_input" type="text" class="ui-inputfield ui-widget ui-state-default ui-corner-all hasDatepicker" size="20"></span></td>
+</tr>
+</tbody>
+</table>
+<img id="j_idt59" height="3" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dot_clear.gif"><table>
+<tbody>
+<tr>
+<td class="column-tamanho-fixo"><img id="j_idt61" width="655" height="10" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dot_clear.gif"></td>
+<td><button id="j_idt62" name="j_idt62" onclick="PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'j_idt62',process:'j_idt62 consultarNFCeForm',update:'j_idt62 consultarNFCeForm lista-agendamentos-nfce',oncomplete:function(xhr, status, args){agendamentosNFCeTable.filter();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Agendar exportação</span></button></td>
+</tr>
+</tbody>
+</table>
+</span></span></div></fieldset></div></div><img id="j_idt63" height="10" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dot_clear.gif"><div id="agendamentoExportacaoNFCe" class="ui-panel ui-widget ui-widget-content ui-corner-all panel-generico" style="width: 95%"><div id="agendamentoExportacaoNFCe_header" class="ui-panel-titlebar ui-widget-header ui-corner-all"><span class="ui-panel-title">Agendamentos de exportação NFCe</span></div><div id="agendamentoExportacaoNFCe_content" class="ui-panel-content ui-widget-content"><div id="lista-agendamentos-nfce" class="ui-datatable ui-widget"><div id="lista-agendamentos-nfce_paginatortop" class="ui-paginator ui-paginator-top ui-widget-header ui-corner-tl ui-corner-tr" style=""><span id="yui-pg129-0-first-span" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-first">First</span></span> <span id="yui-pg129-0-prev-span" class="ui-paginator-previous ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-prev">Prev</span></span> <span id="yui-pg129-0-pages" class="ui-paginator-pages"><span class="ui-paginator-page ui-state-default ui-corner-all ui-paginator-current-page ui-state-active">1</span><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="2">2</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="3">3</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="4">4</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="5">5</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="6">6</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="7">7</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="8">8</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="9">9</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="10">10</a></span> <a id="yui-pg129-0-next-link" href="#" class="ui-paginator-next ui-state-default ui-corner-all"><span class="ui-icon ui-icon-seek-next">Next</span></a> <a id="yui-pg129-0-last-link" href="#" class="ui-paginator-last ui-state-default ui-corner-all"><span class="ui-icon ui-icon-seek-end">Last</span></a></div><table><thead><tr><th id="lista-agendamentos-nfce:j_idt64" class="ui-state-default" style="text-align: center">Situação</th><th id="lista-agendamentos-nfce:j_idt66" class="ui-state-default" style="text-align: center">Data de criação</th><th id="lista-agendamentos-nfce:j_idt68" class="ui-state-default" style="text-align: center">Data processamento</th><th id="lista-agendamentos-nfce:j_idt70" class="ui-state-default" style="text-align: center">CNPJ<select id="lista-agendamentos-nfce:j_idt70_filter" name="lista-agendamentos-nfce:j_idt70_filter" class="ui-column-filter" onchange="agendamentosNFCeTable.filter()"><option value="" selected="selected">Selecione...</option></select></th><th id="lista-agendamentos-nfce:j_idt72" class="ui-state-default" style="text-align: center">IE<select id="lista-agendamentos-nfce:j_idt72_filter" name="lista-agendamentos-nfce:j_idt72_filter" class="ui-column-filter" onchange="agendamentosNFCeTable.filter()"><option value="" selected="selected">Selecione...</option><option value="194763501">19476350-1</option><option value="194342999">19434299-9</option></select></th><th id="lista-agendamentos-nfce:j_idt74" class="ui-state-default" style="text-align: center">Ações</th></tr></thead><tbody id="lista-agendamentos-nfce_data" class="ui-datatable-data"><tr id="lista-agendamentos-nfce_row_0" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:33:25</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:0:j_idt76" name="lista-agendamentos-nfce:0:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:0:j_idt76',process:'lista-agendamentos-nfce:0:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:0:j_idt80" name="lista-agendamentos-nfce:0:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:0:j_idt80',process:'lista-agendamentos-nfce:0:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:0:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_1" class="ui-widget-content ui-datatable-odd"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:33:15</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:1:j_idt76" name="lista-agendamentos-nfce:1:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:1:j_idt76',process:'lista-agendamentos-nfce:1:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:1:j_idt80" name="lista-agendamentos-nfce:1:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:1:j_idt80',process:'lista-agendamentos-nfce:1:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:1:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_2" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:33:05</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:2:j_idt76" name="lista-agendamentos-nfce:2:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:2:j_idt76',process:'lista-agendamentos-nfce:2:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:2:j_idt80" name="lista-agendamentos-nfce:2:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:2:j_idt80',process:'lista-agendamentos-nfce:2:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:2:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_3" class="ui-widget-content ui-datatable-odd"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:32:56</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:3:j_idt76" name="lista-agendamentos-nfce:3:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:3:j_idt76',process:'lista-agendamentos-nfce:3:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:3:j_idt80" name="lista-agendamentos-nfce:3:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:3:j_idt80',process:'lista-agendamentos-nfce:3:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:3:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_4" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:32:46</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:4:j_idt76" name="lista-agendamentos-nfce:4:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:4:j_idt76',process:'lista-agendamentos-nfce:4:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:4:j_idt80" name="lista-agendamentos-nfce:4:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:4:j_idt80',process:'lista-agendamentos-nfce:4:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:4:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_5" class="ui-widget-content ui-datatable-odd"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:32:36</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:5:j_idt76" name="lista-agendamentos-nfce:5:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:5:j_idt76',process:'lista-agendamentos-nfce:5:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:5:j_idt80" name="lista-agendamentos-nfce:5:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:5:j_idt80',process:'lista-agendamentos-nfce:5:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:5:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_6" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:32:27</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:6:j_idt76" name="lista-agendamentos-nfce:6:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:6:j_idt76',process:'lista-agendamentos-nfce:6:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:6:j_idt80" name="lista-agendamentos-nfce:6:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:6:j_idt80',process:'lista-agendamentos-nfce:6:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:6:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_7" class="ui-widget-content ui-datatable-odd"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:32:17</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:7:j_idt76" name="lista-agendamentos-nfce:7:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:7:j_idt76',process:'lista-agendamentos-nfce:7:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:7:j_idt80" name="lista-agendamentos-nfce:7:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:7:j_idt80',process:'lista-agendamentos-nfce:7:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:7:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_8" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:32:07</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:8:j_idt76" name="lista-agendamentos-nfce:8:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:8:j_idt76',process:'lista-agendamentos-nfce:8:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:8:j_idt80" name="lista-agendamentos-nfce:8:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:8:j_idt80',process:'lista-agendamentos-nfce:8:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:8:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_9" class="ui-widget-content ui-datatable-odd"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:31:57</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:9:j_idt76" name="lista-agendamentos-nfce:9:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:9:j_idt76',process:'lista-agendamentos-nfce:9:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:9:j_idt80" name="lista-agendamentos-nfce:9:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:9:j_idt80',process:'lista-agendamentos-nfce:9:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:9:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_10" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:31:48</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:10:j_idt76" name="lista-agendamentos-nfce:10:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:10:j_idt76',process:'lista-agendamentos-nfce:10:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:10:j_idt80" name="lista-agendamentos-nfce:10:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:10:j_idt80',process:'lista-agendamentos-nfce:10:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:10:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_11" class="ui-widget-content ui-datatable-odd"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:31:38</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:11:j_idt76" name="lista-agendamentos-nfce:11:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:11:j_idt76',process:'lista-agendamentos-nfce:11:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:11:j_idt80" name="lista-agendamentos-nfce:11:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:11:j_idt80',process:'lista-agendamentos-nfce:11:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:11:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_12" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:31:28</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:12:j_idt76" name="lista-agendamentos-nfce:12:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:12:j_idt76',process:'lista-agendamentos-nfce:12:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:12:j_idt80" name="lista-agendamentos-nfce:12:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:12:j_idt80',process:'lista-agendamentos-nfce:12:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:12:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_13" class="ui-widget-content ui-datatable-odd"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:31:19</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:13:j_idt76" name="lista-agendamentos-nfce:13:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:13:j_idt76',process:'lista-agendamentos-nfce:13:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:13:j_idt80" name="lista-agendamentos-nfce:13:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:13:j_idt80',process:'lista-agendamentos-nfce:13:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:13:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr><tr id="lista-agendamentos-nfce_row_14" class="ui-widget-content ui-datatable-even"><td style="text-align: center">Aguardando</td><td style="text-align: center">01/04/2024 16:31:09</td><td style="text-align: center"></td><td style="text-align: center"></td><td style="text-align: center">19476350-1</td><td style="text-align: center">
+                            
+                            <button id="lista-agendamentos-nfce:14:j_idt76" name="lista-agendamentos-nfce:14:j_idt76" onclick="agendamentoExportacaoNFCeInfoModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:14:j_idt76',process:'lista-agendamentos-nfce:14:j_idt76',update:'panelAgendamentoExportacaoNFCeInfo',oncomplete:function(xhr, status, args){agendamentoExportacaoNFCeInfoModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Info</span></button>
+                            
+                            
+                            
+                            
+                            
+                            <button id="lista-agendamentos-nfce:14:j_idt80" name="lista-agendamentos-nfce:14:j_idt80" onclick="formConfirmarExclusaoAgendamentoNFCeModal.show();;PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'consultarNFCeForm',async:false,global:true,source:'lista-agendamentos-nfce:14:j_idt80',process:'lista-agendamentos-nfce:14:j_idt80 consultarNFCeForm',update:'lista-agendamentos-nfce:14:j_idt80 consultarNFCeForm panelExcluirAgendamentoNFCe',oncomplete:function(xhr, status, args){formConfirmarExclusaoAgendamentoNFCeModal.show();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Excluir</span></button>
+                            </td></tr></tbody></table><div id="lista-agendamentos-nfce_paginatorbottom" class="ui-paginator ui-paginator-bottom ui-widget-header ui-corner-bl ui-corner-br" style=""><span id="yui-pg129-1-first-span" class="ui-paginator-first ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-first">First</span></span> <span id="yui-pg129-1-prev-span" class="ui-paginator-previous ui-state-default ui-corner-all ui-state-disabled"><span class="ui-icon ui-icon-seek-prev">Prev</span></span> <span id="yui-pg129-1-pages" class="ui-paginator-pages"><span class="ui-paginator-page ui-state-default ui-corner-all ui-paginator-current-page ui-state-active">1</span><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="2">2</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="3">3</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="4">4</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="5">5</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="6">6</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="7">7</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="8">8</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="9">9</a><a href="#" class="ui-paginator-page ui-state-default ui-corner-all" page="10">10</a></span> <a id="yui-pg129-1-next-link" href="#" class="ui-paginator-next ui-state-default ui-corner-all"><span class="ui-icon ui-icon-seek-next">Next</span></a> <a id="yui-pg129-1-last-link" href="#" class="ui-paginator-last ui-state-default ui-corner-all"><span class="ui-icon ui-icon-seek-end">Last</span></a></div></div></div></div>
+<input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-4229316559562595014:7032852389819535793" autocomplete="off"></form><script type="text/javascript">jQuery(function() {comunicadoDlg = new PrimeFaces.widget.Dialog('teste',{autoOpen:true,minHeight:0,width:600,height:230,modal: true});});</script><script type="text/javascript">jQuery(function() {agendamentoExportacaoNFCeInfoModal = new PrimeFaces.widget.Dialog('agendamentoExportacaoNFCeInfoModal',{autoOpen:false,minHeight:0,width:600,height:300,modal: true});});</script><script type="text/javascript">jQuery(function() {formConfirmarExclusaoAgendamentoNFCeModal = new PrimeFaces.widget.Dialog('formConfirmarExclusaoAgendamentoNFCeModal',{autoOpen:false,minHeight:0,width:600,height:180,modal: true});});</script>
+                <div style="display: none; z-index: 1002; outline: 0px; position: absolute; height: auto; width: 600px; top: 266px; left: 540px;" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-teste"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-teste">Comunicado Importante</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="teste" style="width: auto; min-height: 0px; height: 190.9px;" class="ui-dialog-content ui-widget-content">
+<form id="j_idt82" name="j_idt82" method="post" action="/siatweb/faces/views/nfce/ExportarNFCE.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt82" value="j_idt82">
+<div id="j_idt83" class="ui-panel ui-widget ui-widget-content ui-corner-all"><div id="j_idt83_content" class="ui-panel-content ui-widget-content">A
+ responsabilidade sobre os arquivos de Notas Fiscais de Consumidor 
+Eletrônicas é do próprio contribuinte emitente ou adquirente de 
+produtos. A disponibilização de arquivos no site da SEFAZ não retira a 
+responsabilidade da guarda dos arquivos e nem do registro de notas que 
+por ventura não sejam encontradas aqui.
+                
+                <p><span style="font-weight:bold">Observação: Os 
+arquivos de download estarão disponíveis durante 60 dias a partir da sua
+ data de processamento, após isso os mesmos serão deletados.</span>
+                </p><img id="j_idt88" height="15px" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dot_clear.gif"><hr id="j_idt89" class="ui-separator ui-state-default ui-corner-all">
+                
+                <div style="text-align: center"><button id="j_idt91" name="j_idt91" onclick="comunicadoDlg.hide();PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'j_idt82',async:false,global:true,source:'j_idt91',process:'j_idt82'});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Entendi</span></button>
+                </div></div></div><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-4229316559562595014:7032852389819535793" autocomplete="off">
+</form></div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div><div style="display: none; z-index: 1004; outline: 0px; position: absolute; height: auto; width: 600px; top: 546px; left: 540px;" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-agendamentoExportacaoNFCeInfoModal"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-agendamentoExportacaoNFCeInfoModal">Exportação INFO</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="agendamentoExportacaoNFCeInfoModal" style="width: auto; min-height: 0px; height: 260.9px;" class="ui-dialog-content ui-widget-content">
+<form id="j_idt93" name="j_idt93" method="post" action="/siatweb/faces/views/nfce/ExportarNFCE.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt93" value="j_idt93">
+<span id="panelAgendamentoExportacaoNFCeInfo"><div id="j_idt94" class="ui-panel ui-widget ui-widget-content ui-corner-all"><div id="j_idt94_content" class="ui-panel-content ui-widget-content"><table>
+<tbody>
+<tr>
+<td>Tipo consulta: </td>
+<td>Emitente</td>
+</tr>
+<tr>
+<td>CNPJ: </td>
+<td></td>
+</tr>
+<tr>
+<td>IE Contribuinte: </td>
+<td>19476350-1</td>
+</tr>
+<tr>
+<td>Tipo de nota: </td>
+<td>Saída</td>
+</tr>
+<tr>
+<td>Status NFC-e: </td>
+<td>Todas</td>
+</tr>
+<tr>
+<td>Série: </td>
+<td></td>
+</tr>
+<tr>
+<td>Data de Emissão Inicial: </td>
+<td>01/01/2019</td>
+</tr>
+<tr>
+<td>Data de Emissão Final: </td>
+<td>31/01/2019</td>
+</tr>
+</tbody>
+</table>
+<img id="j_idt112" height="15px" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dot_clear.gif"><hr id="j_idt113" class="ui-separator ui-state-default ui-corner-all">
+                    <div style="text-align: center"><button id="j_idt115" name="j_idt115" onclick="agendamentoExportacaoNFCeInfoModal.hide();PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'j_idt93',async:false,global:true,source:'j_idt115',process:'j_idt93'});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Ok</span></button>
+                    </div></div></div></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-4229316559562595014:7032852389819535793" autocomplete="off">
+</form></div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div><div style="display: none; z-index: 1000; outline: 0px; position: absolute;" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable ui-resizable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-formConfirmarExclusaoAgendamentoNFCeModal"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-formConfirmarExclusaoAgendamentoNFCeModal">Confirmar exclusão agendamento</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="formConfirmarExclusaoAgendamentoNFCeModal" style="" class="ui-dialog-content ui-widget-content">
+<form id="j_idt117" name="j_idt117" method="post" action="/siatweb/faces/views/nfce/ExportarNFCE.xhtml" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_idt117" value="j_idt117">
+<span id="panelExcluirAgendamentoNFCe"><div id="j_idt118" class="ui-panel ui-widget ui-widget-content ui-corner-all"><div id="j_idt118_content" class="ui-panel-content ui-widget-content"><table>
+<tbody>
+<tr>
+<td>
+                        <p>Deseja realmente remover este agendamento?</p></td>
+</tr>
+</tbody>
+</table>
+<img id="j_idt121" height="15px" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/dot_clear.gif"><hr id="j_idt122" class="ui-separator ui-state-default ui-corner-all">
+                    <div style="text-align: center"><button id="j_idt124" name="j_idt124" onclick="formConfirmarExclusaoAgendamentoNFCeModal.hide();PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'j_idt117',async:false,global:true,source:'j_idt124',process:'@all',update:'consultarNFCeForm',oncomplete:function(xhr, status, args){agendamentosNFCeTable.filter();}});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Sim</span></button><button id="j_idt125" name="j_idt125" onclick="formConfirmarExclusaoAgendamentoNFCeModal.hide();PrimeFaces.ajax.AjaxRequest('/siatweb/faces/views/nfce/ExportarNFCE.xhtml',{formId:'j_idt117',async:false,global:true,source:'j_idt125',process:'j_idt117'});return false;" type="submit" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false"><span class="ui-button-text">Não</span></button>
+                    </div></div></div></span><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="-4229316559562595014:7032852389819535793" autocomplete="off">
+</form></div><div class="ui-resizable-handle ui-resizable-n"></div><div class="ui-resizable-handle ui-resizable-e"></div><div class="ui-resizable-handle ui-resizable-s"></div><div class="ui-resizable-handle ui-resizable-w"></div><div class="ui-resizable-handle ui-resizable-se ui-icon ui-icon-gripsmall-diagonal-se ui-icon-grip-diagonal-se" style="z-index: 1001;"></div><div class="ui-resizable-handle ui-resizable-sw" style="z-index: 1002;"></div><div class="ui-resizable-handle ui-resizable-ne" style="z-index: 1003;"></div><div class="ui-resizable-handle ui-resizable-nw" style="z-index: 1004;"></div></div></div>
+
+                <div id="bottom">
+                    <span class="branco10">
+                        <p align="center">
+                            Site Desenvolvido pelo Corpo Técnico - UNITEC/SEFAZ © todos os direitos reservados. v.1.0
+                        </p>
+                    </span>
+                </div>
+            </div>
+            <!-- Google Analytics -->
+            <script>
+                /*<![CDATA[*/
+                (function (i, s, o, g, r, a, m) {
+                    i['GoogleAnalyticsObject'] = r;
+                    i[r] = i[r] || function () {
+                        (i[r].q = i[r].q || []).push(arguments)
+                    }, i[r].l = 1 * new Date();
+                    a = s.createElement(o),
+                            m = s.getElementsByTagName(o)[0];
+                    a.async = 1;
+                    a.src = g;
+                    m.parentNode.insertBefore(a, m)
+                })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+                ga('create', 'UA-146690401-3', 'auto');
+                ga('send', 'pageview');
+
+                var configMenu = (elem, parent) => {
+                    if (elem.forEach) {
+                        elem.forEach((val) => {
+                            configMenu(val, parent)
+                        })
+                    } else if (elem.childNodes) {
+                        Array.from(elem.childNodes).forEach((elem1) => {
+                            if (elem1.localName == 'a' && elem1.innerText.length > 0) {
+                                parent = parent.concat(' / ').concat(elem1.innerText)
+                                if (elem1.onclick) {
+//                                    console.log(parent)
+                                    let _onclick = elem1.onclick
+                                    elem1.onclick = (e) => {
+                                        ga('send', 'event', 'Menu', 'CickedMenu', parent);
+                                        if (_onclick !== undefined) {
+                                            _onclick.apply(this, null)
+                                        }
+                                    }
+                                }
+                            }
+                            if (elem1.childNodes) {
+                                configMenu(elem1, parent)
+                            }
+
+                        })
+                    }
+                }
+
+                if (jQuery('#formMenuSiatWebId\\:menuSiatWebId_menu')[0]) {
+                    configMenu(jQuery('#formMenuSiatWebId\\:menuSiatWebId_menu')[0].childNodes, "")
+                }
+                /*]]>*/
+            </script>
+            <!-- End Google Analytics -->
+<div style="display: none; z-index: 1006; outline: 0px; height: auto; width: 250px; top: 667px; left: 715px;" class="ui-dialog ui-widget ui-widget-content ui-corner-all  ui-draggable" tabindex="-1" role="dialog" aria-labelledby="ui-dialog-title-dialogLoading"><div class="ui-dialog-titlebar ui-widget-header ui-corner-all ui-helper-clearfix"><span class="ui-dialog-title" id="ui-dialog-title-dialogLoading">Carregando...</span><a href="#" class="ui-dialog-titlebar-close ui-corner-all" role="button" style="display: none;"><span class="ui-icon ui-icon-closethick">close</span></a></div><div id="dialogLoading" style="width: auto; min-height: 0px; height: auto;" class="ui-dialog-content ui-widget-content"><img id="j_idt11" src="SIAT%20-%20Sistema%20Integrado%20de%20Administra%C3%A7ao%20Tribut%C3%A1ria_arquivos/ajax-loader.gif" alt=""></div></div><div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" style="position: absolute; top: 525.75px; left: 625.367px; z-index: 1; display: none;"><div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a class="ui-datepicker-prev ui-corner-all" onclick="DP_jQuery_1711998330762.datepicker._adjustDate('#dataFinal_input', -1, 'M');" title="&lt;Anterior"><span class="ui-icon ui-icon-circle-triangle-w">&lt;Anterior</span></a><a class="ui-datepicker-next ui-corner-all" onclick="DP_jQuery_1711998330762.datepicker._adjustDate('#dataFinal_input', +1, 'M');" title="Próximo&gt;"><span class="ui-icon ui-icon-circle-triangle-e">Próximo&gt;</span></a><div class="ui-datepicker-title"><span class="ui-datepicker-month">Janeiro</span>&nbsp;<span class="ui-datepicker-year">2019</span></div></div><table class="ui-datepicker-calendar"><thead><tr><th class="ui-datepicker-week-end"><span title="Domingo">Dom</span></th><th><span title="Segunda-feira">Seg</span></th><th><span title="Terça-feira">Ter</span></th><th><span title="Quarta-feira">Qua</span></th><th><span title="Quinta-feira">Qui</span></th><th><span title="Sexta-feira">Sex</span></th><th class="ui-datepicker-week-end"><span title="Sabado">Sab</span></th></tr></thead><tbody><tr><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">1</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">2</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">3</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">4</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">5</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">6</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">7</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">8</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">9</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">10</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">11</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">12</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">13</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">14</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">15</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">16</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">17</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">18</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">19</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">20</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">21</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">22</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">23</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">24</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">25</a></td><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">26</a></td></tr><tr><td class=" ui-datepicker-week-end " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">27</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">28</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">29</a></td><td class=" " onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default" href="#">30</a></td><td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day" onclick="DP_jQuery_1711998330762.datepicker._selectDay('#dataFinal_input',0,2019, this);return false;"><a class="ui-state-default ui-state-active ui-state-hover" href="#">31</a></td><td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td><td class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td></tr></tbody></table></div></body></html>
