@@ -18,8 +18,11 @@ Histórico de Versões:
 - [Versão 2.0 (03/11/2023): Automatiza as solicitações de exportação de documentos de entrada (NF-e)]
 - [Versão 2.5 (28/01/2024): Adiciona arquivo datas.txt para adicionar datas]
 - [Versão 3.0 (31/03/2024): Remove tempo de espera entre ações]
+- [Versão 3.1 (01/04/2024): Adiciona verificação por imagem de loading]
 
 """
+
+img_loading = 'loading_img.png'
 
 def ler_datas_do_arquivo(nome_arquivo):
     try:
@@ -65,7 +68,15 @@ def automatizar_NFCe():
 
         # Pressionar o botão'
         pyautogui.press('space')
-        time.sleep(3)
+        
+        time.sleep(1)
+        while pyautogui.locateOnScreen(img_loading):
+            # Faz algo quando o elemento está visível
+            print("Elemento encontrado!")
+            # espera 2s e tenta encontrar denovo
+            time.sleep(2)
+        print("Elemento não encontrado.")
+        
 
     status_label.config(text="Ação concluída!")
 
@@ -121,7 +132,14 @@ def automatizar_NFe():
 
         # Pressionar o botão
         pyautogui.press('space')
-        time.sleep(3)
+        
+        time.sleep(1)
+        while pyautogui.locateOnScreen(img_loading):
+            # Faz algo quando o elemento está visível
+            print("Elemento encontrado!")
+            # espera 2s e tenta encontrar denovo
+            time.sleep(2)
+        print("Elemento não encontrado.")
 
     status_label.config(text="Ação concluída!")
 
