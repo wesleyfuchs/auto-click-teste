@@ -69,12 +69,12 @@ def automatizar_NFCe():
         # Pressionar o botão'
         pyautogui.press('space')
         
-        time.sleep(1)
+        time.sleep(3)
         while pyautogui.locateOnScreen(img_loading):
             # Faz algo quando o elemento está visível
             print("Elemento encontrado!")
             # espera 2s e tenta encontrar denovo
-            time.sleep(2)
+            time.sleep(5)
         print("Elemento não encontrado.")
         
 
@@ -102,7 +102,7 @@ def automatizar_NFe():
 
         # Selecionar checkbox 'Contribuente como Emitente'
         pyautogui.press('right')
-        # time.sleep(2)
+        time.sleep(2)
 
         # 3 tabs para 'Tipo de nota:'
         for _ in range(3):
@@ -133,12 +133,12 @@ def automatizar_NFe():
         # Pressionar o botão
         pyautogui.press('space')
         
-        time.sleep(1)
+        time.sleep(3)
         while pyautogui.locateOnScreen(img_loading):
             # Faz algo quando o elemento está visível
             print("Elemento encontrado!")
             # espera 2s e tenta encontrar denovo
-            time.sleep(2)
+            time.sleep(5)
         print("Elemento não encontrado.")
 
     status_label.config(text="Ação concluída!")
